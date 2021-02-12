@@ -94,3 +94,11 @@ header #logo a:hover{
     background: rgba(240, 208, 213, 0.7);
     padding-top: 120px;
 }
+
+/* pie de pagina */
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(0, 0, 0);
+}
