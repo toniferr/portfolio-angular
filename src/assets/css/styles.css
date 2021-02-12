@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf");
+}
+
+@font-face{
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+
+body {
+    background: pink;
+    font-family: "yanone", Arial, Helvetica;
+}
