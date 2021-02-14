@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -23,7 +24,7 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form){
+  onSubmit(form: NgForm){
     console.log(this.project);
   }
 

@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', component: AboutComponent},
   {path: 'sobre-mi', component:AboutComponent},
   {path: 'proyectos', component:ProjectsComponent},
-  {path: 'crear-proyecto', component:CreateComponent},
+  {path: 'crear-proyectos', component:CreateComponent},
   {path: 'contacto', component:ContactComponent},
   {path: '**', component:ErrorComponent},
 ];
