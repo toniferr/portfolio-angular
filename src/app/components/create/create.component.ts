@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
-import { NgForm } from '@angular/forms';
 import { UploadService } from '../../services/upload.service';
 import { Global } from '../../services/global';
 
@@ -29,7 +28,7 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm){
+  onSubmit(form: any){
 
     //guardar los datos
     this._projectService.saveProject(this.project).subscribe(

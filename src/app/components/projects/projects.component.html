@@ -3,7 +3,7 @@
     <h2>Proyectos</h2>
 
     <ul>
-        <li *ngFor="let project of projects">
+        <li *ngFor="let project of projects" class="project">
             <div class="image">
                 <img src="{{url+'/get-image/'+project.image}}" *ngIf="project.image"/>
             </div>

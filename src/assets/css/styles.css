@@ -238,6 +238,7 @@ form input[disabled]{
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .project .image{  /* mascara para recortar lo que se salga de el*/
@@ -247,5 +248,5 @@ form input[disabled]{
 }
 
 .project img{
-    width: 120px;
+    width: 100%;
 }
