@@ -6,7 +6,12 @@
     <button (click)="resetearSlider()">Resetear slider</button>
 
     <div *ngIf="anchuraToSlider">
-      <slider [anchura]="anchuraToSlider" [etiquetas]="captions"></slider>
+      <slider [anchura]="anchuraToSlider" 
+        [etiquetas]="captions"
+       (conseguirAutor)="getAutor($event)">
+    </slider>
     </div>
+
+    {{autor.nombre + " " + autor.website}}
 
 </div>
