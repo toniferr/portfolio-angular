@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $:any;
 
 @Component({
   selector: 'app-contact',
@@ -9,20 +8,24 @@ declare var $:any;
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public widthSlider !: number;
+  public anchuraToSlider !: number;
+  public captions : boolean;
+
+  constructor() { 
+    this.captions = true;
+  }
 
   ngOnInit(): void {
-    $("#logo").click(function(){
-      //e.preventDefault();
-      $("header").css("background","green")
-      .css("height","50px");
-    });
+  }
 
-    $('.galeria').bxSlider({
-      mode: 'fade',
-      captions: false,
-      slideWidth: 400
-    });
+
+  cargarSlider(){
+    this.anchuraToSlider = this.widthSlider;
+  }
+
+  resetearSlider(){
+    this.anchuraToSlider = 0;
   }
 
 }
