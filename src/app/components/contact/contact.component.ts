@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     var opcion_clasica  =  document.querySelector('#texto')?.innerHTML;
-    console.log(this.textos.nativeElement.textContent);
+    //console.log(this.textos.nativeElement.textContent);
   }
 
 

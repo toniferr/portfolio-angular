@@ -2,14 +2,15 @@
     <h1>Contacto</h1>
 
     <div id="texto" #textos>
-      <p>
+      <!-- <p [hidden]="true"> -->
+      <p appResaltado>
         Esta es la pagina de contact, puedes enviarnos cualquier duda
       </p>
     </div>
 
-    <!--
+    
     Tamaño del slider:
-    <input type="number" [(ngModel)]="widthSlider"> //(keyup.enter)="cargarSlider()"/>
+    <input type="number" [(ngModel)]="widthSlider"> <!--(keyup.enter)="cargarSlider()"/> -->
     <button (click)="cargarSlider()">Cargar slider</button>
     <button (click)="resetearSlider()">Resetear slider</button>
 
@@ -21,6 +22,6 @@
     </div>
 
     {{autor.nombre + " " + autor.website}}
-  -->
+  
 
 </div>
